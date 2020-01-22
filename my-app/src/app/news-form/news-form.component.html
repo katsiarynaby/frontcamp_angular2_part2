@@ -1,0 +1,28 @@
+<div class="container main-container">
+<form class="form" [formGroup]="form" (ngSubmit)="onSaveNews()">
+  <label class="field">
+      Heading
+      <input type="text" class="userInput" formControlName="title" name="title" />
+  </label>
+  <label class="field">
+      Short description
+      <input type="text" class="userInput" formControlName="description" name="description" />
+  </label>
+  <label class="field">
+      Image URL
+      <input type="text" class="userInput" formControlName="imageUrl" name="imageUrl" />
+  </label>
+  <label class="field">
+      Date
+      <input type="date" class="userInput" formControlName="date" name="date" />
+  </label>
+  <label class="field">
+      Source URL
+      <input type="text" class="userInput" formControlName="url" name="url" />
+  </label>
+  <div class="controls">
+      <button type="button" (click)="onSaveNews()" [disabled]="!form.valid" >Save</button>
+      <button type="button" (click)="onGoBack()">Cancel</button>
+  </div>
+</form>
+</div>

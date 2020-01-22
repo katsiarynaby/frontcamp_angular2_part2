@@ -1,0 +1,33 @@
+.main-container {
+  margin: 10px;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    margin: 0 auto;
+  }
+
+  .field {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .userInput {
+    min-width: 20rem;
+    max-width: 20rem;
+  }
+
+  .userInput.ng-invalid {
+    border: 1px solid red;
+  }
+
+  .button {
+    height: 2rem;
+    display: block;
+    margin: 1rem 0;
+  }
+}
+
