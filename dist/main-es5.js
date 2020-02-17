@@ -1020,55 +1020,61 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _angular_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material */
     "./node_modules/@angular/material/esm2015/material.js");
     /* harmony import */
 
 
-    var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./app-routing.module */
     "./src/app/app-routing.module.ts");
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./footer */
     "./src/app/footer/index.ts");
     /* harmony import */
 
 
-    var _header__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _header__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./header */
     "./src/app/header/index.ts");
     /* harmony import */
 
 
-    var _main__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _main__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! ./main */
     "./src/app/main/index.ts");
     /* harmony import */
 
 
-    var _not_found__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _not_found__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! ./not-found */
     "./src/app/not-found/index.ts");
     /* harmony import */
 
 
-    var _news_form__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _news_form__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! ./news-form */
     "./src/app/news-form/index.ts");
     /* harmony import */
 
 
-    var _pipes__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _pipes__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ./pipes */
     "./src/app/pipes/index.ts");
 
@@ -1084,7 +1090,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AppModule, [{
         key: "ngDoBootstrap",
         value: function ngDoBootstrap() {
-          var footerComponent = Object(_angular_elements__WEBPACK_IMPORTED_MODULE_3__["createCustomElement"])(_footer__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], {
+          var footerComponent = Object(_angular_elements__WEBPACK_IMPORTED_MODULE_3__["createCustomElement"])(_footer__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"], {
             injector: this.injector
           });
           customElements.define('app-footer', footerComponent);
@@ -1101,11 +1107,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _footer__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"], _header__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"], _main__WEBPACK_IMPORTED_MODULE_11__["MainComponent"], _not_found__WEBPACK_IMPORTED_MODULE_12__["NotFoundComponent"], _news_form__WEBPACK_IMPORTED_MODULE_13__["NewsFormComponent"], _pipes__WEBPACK_IMPORTED_MODULE_14__["DatePipe"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatCheckboxModule"], _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatSelectModule"], _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatInputModule"], _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatFormFieldModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"]],
-      providers: [],
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]],
-      exports: [_pipes__WEBPACK_IMPORTED_MODULE_14__["DatePipe"]]
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"], _footer__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"], _header__WEBPACK_IMPORTED_MODULE_11__["HeaderComponent"], _main__WEBPACK_IMPORTED_MODULE_12__["MainComponent"], _not_found__WEBPACK_IMPORTED_MODULE_13__["NotFoundComponent"], _news_form__WEBPACK_IMPORTED_MODULE_14__["NewsFormComponent"], _pipes__WEBPACK_IMPORTED_MODULE_15__["DatePipe"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCheckboxModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSelectModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatFormFieldModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"]],
+      providers: [{
+        provide: _angular_common__WEBPACK_IMPORTED_MODULE_6__["APP_BASE_HREF"],
+        useValue: '/'
+      }],
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]],
+      exports: [_pipes__WEBPACK_IMPORTED_MODULE_15__["DatePipe"]]
     })], AppModule);
     /***/
   },

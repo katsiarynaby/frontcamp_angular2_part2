@@ -3,6 +3,7 @@ import { NgModule, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { APP_BASE_HREF } from '@angular/common';
 import { MatCheckboxModule, MatSelectModule, MatButtonModule, MatInputModule, MatFormFieldModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -37,7 +38,7 @@ import { DatePipe } from './pipes';
     MatFormFieldModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent],
   exports: [DatePipe]
 })
